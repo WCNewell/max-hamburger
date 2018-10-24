@@ -5,7 +5,7 @@ import Toolbar from '../../components/Navigation/Toolbar/Toolbar'
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer'
 
 // Turn const layout into class Layout, which also means importing component from react
-// and Layout extends component with render method and return jsx
+// class Layout extends component with render method and returns jsx
 
 class Layout extends Component {
     state = {
