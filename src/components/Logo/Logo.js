@@ -10,7 +10,7 @@ import classes from './Logo.css'
  //  Set the image source as burgerLogo which refers to the string above in webpack friendly syntax
 
 const logo = (props) => (
-    <div className={classes.Logo}>
+    <div className={classes.Logo} style={{height: props.height}}>
         <img src={burgerLogo} alt='My Burger Logo'/>
     </div>
 )
