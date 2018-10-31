@@ -33,6 +33,7 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount () {
+        console.log(this.props)
         axios.get('https://max-hamburger-f1b32.firebaseio.com/ingredients.json')
         .then(response =>{
             this.setState({ ingredients: response.data })
@@ -99,35 +100,36 @@ class BurgerBuilder extends Component {
     purchaseContinueHandler = () => {
         // alert('Continue!')
         // .json endpoint is added below for firebase functionality
-        this.setState( { loading: true } )
-        const order = {
-            ingredients: this.state.ingredients,
-            // price is normally set up on the SERVER so that a customer cannot alter it!!!
-            price: this.state.totalPrice,
-            customer: {
-                name: 'Clark Newell',
-                address: {
-                    street: '123 Gorgeous View Road',
-                    zipCode: '84043',
-                    country: 'Lehi-UT-USA'
-                },
-                email: 'test@test.com'
-            },
-            deliveryMethod: 'fastest'   
-        }
-        axios.post('/orders.json', order)
-            .then(response=> {
-                this.setState({ loading: false, purchasing: false })
-            })
-            .catch(error=> {
-                this.setState({ loading: false, purchasing: false })
-            })
+    //     this.setState( { loading: true } )
+    //     const order = {
+    //         ingredients: this.state.ingredients,
+    //         // price is normally set up on the SERVER so that a customer cannot alter it!!!
+    //         price: this.state.totalPrice,
+    //         customer: {
+    //             name: 'Clark Newell',
+    //             address: {
+    //                 street: '123 Gorgeous View Road',
+    //                 zipCode: '84043',
+    //                 country: 'Lehi-UT-USA'
+    //             },
+    //             email: 'test@test.com'
+    //         },
+    //         deliveryMethod: 'fastest'   
+    //     }
+    //     axios.post('/orders.json', order)
+    //         .then(response=> {
+    //             this.setState({ loading: false, purchasing: false })
+    //         })
+    //         .catch(error=> {
+    //             this.setState({ loading: false, purchasing: false })
+    //         })
+    this.props.history.push('/checkout')
     }
     
     render () {
         const disabledInfo = {
             ...this.state.ingredients
-        };
+        }
         for (let key in disabledInfo) {
             disabledInfo[key] = disabledInfo[key] <= 0;
         }
@@ -165,7 +167,7 @@ class BurgerBuilder extends Component {
                 </Modal>
                     {burger}
             </Aux>
-        );
+        )
     }
 }
 

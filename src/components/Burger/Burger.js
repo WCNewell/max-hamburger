@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
+// import { withRouter } from 'react-router-dom'
+// ^^If you ever want access to match, history, and location, and you dont' want to manually pass it on from the top level component, you can use withRouter...
 
 import classes from './Burger.css'
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 const burger = (props) => {
+    // console.log(props)
     let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
             return [...Array(props.ingredients[igKey])].map((_, i) => {
@@ -25,5 +28,7 @@ const burger = (props) => {
         </div>
     );
 };
+
+// export default withRouter(burger)
 
 export default burger
