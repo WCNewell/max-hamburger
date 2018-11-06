@@ -8,6 +8,10 @@ While a link to the full solution is given at the end of the course, I followed 
 
 >https://WCNewell.github.io/max-hamburger
 
+The back-end database of this project is located here:
+
+>https://console.firebase.google.com/project/max-hamburger-f1b32/database/max-hamburger-f1b32/data
+
 CSS modules are enabled so CSS classes can be scoped to a specific component and not applied globally. The project is "ejected."
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

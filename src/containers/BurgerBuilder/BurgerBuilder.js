@@ -23,9 +23,8 @@ class BurgerBuilder extends Component {
     //     }
     // }
     // the above works, but below is more "modern" syntax for handling of state:
+    
     state = {
-        ingredients: null,
-        totalPrice: 4,
         purchaseable: false,
         purchasing: false,
         loading: false,
@@ -34,13 +33,13 @@ class BurgerBuilder extends Component {
 
     componentDidMount () {
         console.log(this.props)
-        axios.get('https://max-hamburger-f1b32.firebaseio.com/ingredients.json')
-        .then(response =>{
-            this.setState({ ingredients: response.data })
-        })
-        .catch(error => {
-            this.setState({ error: true })
-        })
+        // axios.get('https://max-hamburger-f1b32.firebaseio.com/ingredients.json')
+        // .then(response =>{
+        //     this.setState({ ingredients: response.data })
+        // })
+        // .catch(error => {
+        //     this.setState({ error: true })
+        // })
     }
 
     updatePurchaseState (ingredients) {
