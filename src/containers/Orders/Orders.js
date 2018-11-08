@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from '../../axios-order'
+import axios from '../../axios-orders'
 import Order from '../../components/Order/Order'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
 
