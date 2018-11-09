@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Burger from '../../Burger/Burger';
-import Button from '../../UI/Button/Button';
-import classes from './CheckoutSummary.css';
+import Burger from '../../Burger/Burger'
+import Button from '../../UI/Button/Button'
+import classes from './CheckoutSummary.css'
 
 const checkoutSummary = (props) => {
     return (
@@ -18,7 +18,7 @@ const checkoutSummary = (props) => {
                 btnType="Success"
                 clicked={props.checkoutContinued}>CONTINUE</Button>
         </div>
-    );
+    )
 }
 
 export default checkoutSummary;

@@ -68,20 +68,19 @@ class BurgerBuilder extends Component {
                         ordered={this.purchaseHandler}
                         price={this.props.price} />
                 </Aux>
-            );
+            )
             orderSummary = <OrderSummary
                 ingredients={this.props.ings}
                 price={this.props.price}
                 purchaseCancelled={this.purchaseCancelHandler}
                 purchaseContinued={this.purchaseContinueHandler} />;
         }
-        // {salad: true, meat: false, ...}
         return (
             <Aux>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
                     {orderSummary}
                 </Modal>
-                {burger}
+                    {burger}
             </Aux>
         )
     }
@@ -104,4 +103,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler( BurgerBuilder, axios ));
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler( BurgerBuilder, axios ))
