@@ -1,5 +1,3 @@
-/* Mobile layout: */
-
 .Burger {
     width: 100%;
     margin: auto;
@@ -10,8 +8,6 @@
     font-size: 1.2rem;
 }
 
-/* Portrait (pad) screen media: */
-
 @media (min-width: 500px) and (min-height: 400px) {
     .Burger {
         width: 350px;
@@ -19,16 +15,12 @@
     }
 }
 
-/* Small computer screen media: */
-
 @media (min-width: 500px) and (min-height: 401px) {
     .Burger {
         width: 450px;
         height: 400px;
     }
 }
-
-/* Large computer screen media: */
 
 @media (min-width: 1000px) and (min-height: 700px) {
     .Burger {

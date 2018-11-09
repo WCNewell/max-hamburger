@@ -16,7 +16,7 @@
 }
 
 .Button:disabled {
-    color:#ccc;
+    color: #ccc;
     cursor: not-allowed;
 }
 
