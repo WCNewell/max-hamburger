@@ -112,9 +112,9 @@ class ContactData extends Component {
     }
 
     checkValidity(value, rules) {
-        let isValid = true;
+        let isValid = true
         if (!rules) {
-            return true;
+            return true
         }
         
         if (rules.required) {
@@ -139,7 +139,7 @@ class ContactData extends Component {
             isValid = pattern.test(value) && isValid
         }
 
-        return isValid;
+        return isValid
     }
 
     inputChangedHandler = (event, inputIdentifier) => {
@@ -162,12 +162,12 @@ class ContactData extends Component {
     }
 
     render () {
-        const formElementsArray = [];
+        const formElementsArray = []
         for (let key in this.state.orderForm) {
             formElementsArray.push({
                 id: key,
                 config: this.state.orderForm[key]
-            });
+            })
         }
         let form = (
             <form onSubmit={this.orderHandler}>
@@ -184,9 +184,9 @@ class ContactData extends Component {
                 ))}
                 <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER</Button>
             </form>
-        );
+        )
         if ( this.props.loading ) {
-            form = <Spinner />;
+            form = <Spinner />
         }
         return (
             <div className={classes.ContactData}>
