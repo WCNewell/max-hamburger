@@ -26,7 +26,7 @@ const store = createStore(rootReducer, composeEnhancers(
 
 const app = (
     <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename='max-hamburger'>
             <App />
         </BrowserRouter>
     </Provider>
