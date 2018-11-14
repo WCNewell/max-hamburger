@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-import Button from '../../../components/UI/Button/Button';
-import Spinner from '../../../components/UI/Spinner/Spinner';
+import Button from '../../../components/UI/Button/Button'
+import Spinner from '../../../components/UI/Spinner/Spinner'
 import axios from '../../../axios-orders'
-import classes from './ContactData.css';
-import Input from '../../../components/UI/Input/Input';
+import classes from './ContactData.css'
+import Input from '../../../components/UI/Input/Input'
 import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler'
 import * as actions from '../../../store/actions/index'
 import { updateObject, checkValidity } from '../../../shared/utility'
@@ -102,7 +102,7 @@ class ContactData extends Component {
         event.preventDefault();
         const formData = {};
         for (let formElementIdentifier in this.state.orderForm) {
-            formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
+            formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value
         }
         const order = {
             ingredients: this.props.ings,
@@ -127,10 +127,10 @@ class ContactData extends Component {
         
         let formIsValid = true;
         for (let inputIdentifier in updatedOrderForm) {
-            formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
+            formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid
         }
 
-        this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
+        this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid})
     }
 
     render () {
@@ -165,7 +165,7 @@ class ContactData extends Component {
                 <h4>Enter your Contact Data</h4>
                 {form}
             </div>
-        );
+        )
     }
 }
 

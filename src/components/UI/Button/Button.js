@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import classes from './Button.css';
+import classes from './Button.css'
 
 const button = (props) => (
     <button
@@ -9,4 +9,4 @@ const button = (props) => (
         onClick={props.clicked}>{props.children}</button>
 );
 
-export default button;
+export default button

@@ -27,7 +27,7 @@ export class BurgerBuilder extends Component {
                 return ingredients[igKey];
             } )
             .reduce( ( sum, el ) => {
-                return sum + el;
+                return sum + el
             }, 0 )
         return sum > 0;
     }
@@ -78,7 +78,7 @@ export class BurgerBuilder extends Component {
                 ingredients={this.props.ings}
                 price={this.props.price}
                 purchaseCancelled={this.purchaseCancelHandler}
-                purchaseContinued={this.purchaseContinueHandler} />;
+                purchaseContinued={this.purchaseContinueHandler} />
         }
         return (
             <Aux>

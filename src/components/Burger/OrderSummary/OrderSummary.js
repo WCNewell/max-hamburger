@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Aux from '../../../hoc/Aux/Aux';
-import Button from '../../UI/Button/Button';
+import Aux from '../../../hoc/Aux/Aux'
+import Button from '../../UI/Button/Button'
 
 class OrderSummary extends Component {    
 
@@ -11,8 +11,8 @@ class OrderSummary extends Component {
                 return (
                     <li key={igKey}>
                         <span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {this.props.ingredients[igKey]}
-                    </li> );
-            } );
+                    </li> )
+            } )
 
         return (
             <Aux>
@@ -26,8 +26,8 @@ class OrderSummary extends Component {
                 <Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>
                 <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button>
             </Aux>
-        );
+        )
     }
 }
 
-export default OrderSummary;
+export default OrderSummary
