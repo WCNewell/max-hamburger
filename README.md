@@ -12,19 +12,19 @@ The back-end database of this project is located here:
 
 >https://console.firebase.google.com/project/max-hamburger-f1b32/database/max-hamburger-f1b32/data
 
-At first glance the resulting app looks like mere child's play and to a Mid or Senior Dev, I'm sure it is. But, the code base here reflects days and days of focused study and pages and pages of code. This tutorial covered all the bases of building a professional, production-scale application in React. Finishing this entire course from tip to toe represents a significant amount of time, focus, and dedication. 
+At first glance the resulting app looks like mere child's play, and to a Mid or Senior Dev, I'm sure it is. But, the code base here reflects days and days of focused study and pages and pages of code. This tutorial covered all the bases of building a professional, production-scale application in React. Finishing this entire course from tip to toe represents a significant amount of time, focus, and dedication. 
 
-I plan to write in my own words/blog about everything I've leared here in order to solidfy my own understanding and knowledge. For now, here are some of the main concepts and libraries covered and employed in the coding of this app:
+I plan to write in my own words/blog about everything I've leared here in order to solidfy my own understanding and knowledge. For now, here are some of the main concepts and libraries covered in this course and employed in the coding of this app:
 
 * Best practices for application architecture, e.g. components vs. containers, higher-order components, and utility files.
 * React Router
 * Axios
 * Redux
 * Redux Dev Tools
-* Thunk
+* Thunk vs. Saga
 * Jest
 * Firebase
 
-CSS modules are enabled so CSS classes can be scoped to a specific component and not applied globally. The project is "ejected."
+CSS modules are enabled so CSS classes can be scoped to a specific component and not applied globally. This project is "ejected."
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
