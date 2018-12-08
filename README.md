@@ -12,7 +12,7 @@ The back-end database of this project is located here:
 
 >https://console.firebase.google.com/project/max-hamburger-f1b32/database/max-hamburger-f1b32/data
 
-At first glance the resulting app looks pretty basic, but the code base here reflects several days of focused study and pages and pages of code. This tutorial covered all the bases of building a professional, production-scale application in React. 
+At first glance the resulting app appears basic, but the code base here reflects several days of focused study and pages and pages of code. This tutorial covered all the fundamental building blocks of building a professional, production-scale application in React. 
 
 The main concepts and libraries covered in this course and employed in the coding of this app are:
 
