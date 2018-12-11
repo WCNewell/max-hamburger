@@ -21,7 +21,8 @@ The main concepts and libraries covered in this course and employed in the codin
 * Axios
 * Redux
 * Redux Dev Tools
-* Thunk vs. Saga
+* Redux Thunk
+* Redux Saga
 * Jest
 * Firebase
 
