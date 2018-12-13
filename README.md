@@ -24,6 +24,7 @@ The main concepts and libraries covered in this course and employed in the codin
 * Redux Thunk
 * Redux Saga
 * Jest
+* Next.js
 * Firebase
 
 CSS modules are enabled so CSS classes can be scoped to a specific component and not applied globally. This project is "ejected."
