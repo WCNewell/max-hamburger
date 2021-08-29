@@ -1,4 +1,4 @@
-A working version of this project is deployed here where I used GitHub pages:
+A working version of this project is deployed to GitHub pages:
 
 >https://WCNewell.github.io/max-hamburger
 
